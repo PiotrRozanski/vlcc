@@ -24,7 +24,7 @@ eureka:
         prefer-ip-address: true
     client:
         service-url:
-            defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+            defaultZone: http://admin:${jhipster.registry.password}@vl-jhipster-registry.herokuapp.com/eureka/
 
 spring:
     profiles:
@@ -39,8 +39,11 @@ spring:
         serialization.indent_output: true
     data:
         mongodb:
-            uri: mongodb://localhost:27017
-            database: vlcc
+            host: ds229008.mlab.com
+            port: 29008
+            database: mongo
+            username: mongodb
+            password: virtualLibrary197
         elasticsearch:
             cluster-name:
             cluster-nodes:
