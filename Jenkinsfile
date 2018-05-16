@@ -29,7 +29,7 @@ node {
         sh "./gradlew bootRepackage -x test -Pprod -PnodeInstall --no-daemon"
         archiveArtifacts artifacts: '**/build/libs/*.war', fingerprint: true
     }
-    
+
 //    stage('deployment') {
 //        sh "./gradlew deployHeroku --no-daemon"
 //    }
